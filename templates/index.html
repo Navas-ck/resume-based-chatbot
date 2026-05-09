@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Chatbot</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>Resume Chat</h2>
+
+    <button id="newChatBtn" class="side-btn">➕ New Chat</button>
+    <button id="clearChatBtn" class="side-btn">🗑 Clear Chat</button>
+
+    <div class="upload-box">
+        <h3>Upload Resume</h3>
+        <input type="file" id="fileInput">
+        <button id="uploadBtn">Upload</button>
+        <p id="uploadStatus"></p>
+    </div>
+</div>
+
+<div class="chat-container">
+    <div id="chatHistory" class="chat-history"></div>
+
+    <form id="chatForm" class="chat-form">
+        <input type="text" id="queryInput" placeholder="Ask anything from resume..." required>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>
